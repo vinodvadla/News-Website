@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <header id="header">
+      <div class="logo">
+        <img src="pngwing.com.png" alt="" class="logo-img" onclick="handleclick()" />
+      </div>
+      <div class="nav" id="nav">
+        <ul class="navlinks" id="navlinks">
+          <li id="ipl" onclick="navigate('ipl')" class="link">Ipl</li>
+          <li id="sports" onclick="navigate('sports')" class="link">
+            Sports
+          </li>
+          <li id="politics" onclick="navigate('politics')" class="link">
+            Politics
+          </li>
+          <li id="finance" onclick="navigate('finance')" class="link">
+            Finance
+          </li>
+          <input type="text" placeholder="Search News" id="news-Input" />
+          <button id="search-btn">Search</button>
+          <div class="menu" id="menu"><img src="list.svg" alt="" /></div>
+        </ul>
+      </div>
+    </header>
+    <div class="container" id="container"></div>
+    <template id="card-Template">
+      <div class="card" id="card">
+        <div class="photo"><img src="" alt="" id="news-img" /></div>
+        <h1 id="news-title">title</h1>
+        <p id="news-details">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
+          facere aliquid temporibus sapiente doloremque dolor molestias
+          voluptas ratione nisi, eaque magnam magni illo, officia modi
+          nesciunt quod nulla? Praesentium, quod!
+        </p>
+      </div>
+    </template>
+    <div class="layer" id="layer">
+      <div class="sidediv">
+        <div class="home" id="cancel"><img src="x-circle.svg" alt=""></div>
+        <div class="cont">
+        <ul class="navlinks" id="navlinks">
+          <li id="ipl" onclick="navigate('ipl')">Ipl</li>
+          <li id="sports" onclick="navigate('sports')">Sports</li>
+          <li id="politics" onclick="navigate('politics')">Politics</li>
+          <li id="finance" onclick="navigate('finance')">Finance</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
